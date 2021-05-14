@@ -6,6 +6,7 @@ const globalStyles = createGlobalStyle`
     *{
         box-sizing: border-box;
         background-color: #5352ED;
+        @import url("https://emoji-css.afeld.me/emoji.css" );
 
     }
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
@@ -13,7 +14,6 @@ const globalStyles = createGlobalStyle`
         font-family: 'Roboto';
         background-color: #5352ED;
         color: #E9E9EB;
-        
     }
     
 `;

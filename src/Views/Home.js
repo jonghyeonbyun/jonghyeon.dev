@@ -1,7 +1,18 @@
 import Header from "Components/Header";
 import styled from "styled-components";
 import Man from "assets/man.png";
-const Section = styled.section``;
+const Section = styled.section`
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
 
 const Page = styled.div`
   height: 100vh;
@@ -17,6 +28,7 @@ const Page = styled.div`
 const TextArea = styled.div`
   display: flex;
   flex-direction: column;
+  margin-right: 2em;
 `;
 
 const Button = styled.div`
@@ -73,9 +85,9 @@ const Link = styled.a`
 `;
 const Home = () => (
   <div className="section">
-    <Header />
-    <Page>
-      <Section>
+    <Section>
+      <Header />
+      <Page>
         <TextArea>
           <BigText>Hello, guys</BigText>
           <MText>I am JongHyeon Byun</MText>
@@ -83,9 +95,10 @@ const Home = () => (
             <Button>Who Are You?</Button>
           </Link>
         </TextArea>
-      </Section>
-      <Image src={Man}></Image>
-    </Page>
+
+        <Image src={Man}></Image>
+      </Page>
+    </Section>
   </div>
 );
 

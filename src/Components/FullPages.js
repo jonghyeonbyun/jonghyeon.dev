@@ -8,6 +8,7 @@ import ReactDOM from "react-dom";
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 
+import FooterContent from "Components/Footer";
 const anchors = ["home", "about", "works"];
 
 const FullpageWrapper = () => (
@@ -26,6 +27,7 @@ const FullpageWrapper = () => (
           <Home />
           <About />
           <Works />
+          <FooterContent />
         </div>
       );
     }}

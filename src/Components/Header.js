@@ -3,19 +3,20 @@ import styled from "styled-components";
 
 const Header = styled.header`
   color: white;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 10;
+  justify-content: start;
+
   padding: 50px;
   @media only screen and (max-width: 800px) {
     height: 30px;
     padding: 30px;
+    justify-content: center;
   }
 `;
 const SLink = styled.a`
@@ -25,6 +26,7 @@ const SLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   color: #e9e9eb;
   @media only screen and (max-width: 800px) {
     font-size: 1em;
@@ -33,6 +35,6 @@ const SLink = styled.a`
 
 export default () => (
   <Header>
-    <SLink>JONGHYEON.DEV</SLink>
+    <SLink href="#home">JONGHYEON.DEV</SLink>
   </Header>
 );
