@@ -10,18 +10,25 @@ const Header = styled.header`
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 10;
   padding: 50px;
+  @media only screen and (max-width: 800px) {
+    height: 30px;
+    padding: 30px;
+  }
 `;
 const SLink = styled.a`
-  height: 35px;
+  height: 20px;
   font-size: 1.2em;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #e9e9eb;
+  @media only screen and (max-width: 800px) {
+    font-size: 1em;
+  }
 `;
 
 export default () => (

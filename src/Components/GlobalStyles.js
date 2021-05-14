@@ -8,9 +8,9 @@ const globalStyles = createGlobalStyle`
         background-color: #5352ED;
 
     }
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
     body{
-        font-family: Roboto;
+        font-family: 'Roboto';
         background-color: #5352ED;
         color: #E9E9EB;
         
