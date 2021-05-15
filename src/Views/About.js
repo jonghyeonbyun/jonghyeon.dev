@@ -52,7 +52,7 @@ const Content = styled.div`
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   @media only screen and (max-width: 800px) {
-    width: 70%;
+    width: 60%;
   }
 `;
 const Man = styled.img`
