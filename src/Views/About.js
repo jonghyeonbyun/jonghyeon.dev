@@ -8,7 +8,7 @@ import StandingMan from "assets/standingman.png";
 
 const AboutPage = styled.div`
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: space-evenly;
 `;
 
@@ -104,8 +104,8 @@ const About = () => (
     <Header />
     <AboutPage>
       <Obj src={Obj1} top={200} left={100} />
-      <Obj src={Obj2} bottom={100} left={300} />
-      <Obj src={Obj3} bottom={100} right={400} />
+      <Obj src={Obj2} bottom={100} left={50} />
+      <Obj src={Obj3} bottom={100} right={100} />
       <Obj src={Obj4} top={100} right={100} />
       <Content>
         <BigText>Developer</BigText>

@@ -7,16 +7,17 @@ const Header = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: start;
-
-  padding: 50px;
+  margin-left: 50px;
   @media only screen and (max-width: 800px) {
-    height: 30px;
-    padding: 30px;
+    padding: 0;
+    margin-left: 0;
+    height: 70px;
     justify-content: center;
+    align-items: center;
   }
 `;
 const SLink = styled.a`

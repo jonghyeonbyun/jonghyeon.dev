@@ -15,7 +15,7 @@ const Section = styled.section`
 `;
 
 const Page = styled.div`
-  height: 100vh;
+  height: 100%;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -53,7 +53,7 @@ const Button = styled.div`
 `;
 
 const Image = styled.img`
-  height: 50vh;
+  height: 25vw;
   @media only screen and (max-width: 800px) {
     height: 250px;
     max-height: 80vw;
