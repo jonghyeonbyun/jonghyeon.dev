@@ -41,6 +41,16 @@ const Obj = styled.img`
   }
 `;
 const Content = styled.div`
+  @keyframes flybox {
+    from {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  animation-name: flybox;
+  animation-duration: 1s;
   padding: 1.2em;
   display: flex;
   flex-direction: column;
@@ -70,6 +80,7 @@ const BigText = styled.span`
   font-size: 3em;
   background-color: transparent;
   margin-bottom: 0.2em;
+
   @media only screen and (max-width: 800px) {
     font-size: 2em;
     margin-bottom: 0.2em;
@@ -78,7 +89,8 @@ const BigText = styled.span`
 const MText = styled.span`
   font-weight: 500;
   background-color: transparent;
-  font-size: 2em;
+  font-size: 1.5em;
+
   margin-bottom: 1em;
   font-family: Roboto;
   @media only screen and (max-width: 800px) {
@@ -90,7 +102,7 @@ const MText = styled.span`
 const LText = styled.span`
   background-color: transparent;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0.2em;
   font-family: Roboto;
   @media only screen and (max-width: 800px) {
